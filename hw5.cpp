@@ -316,7 +316,7 @@ cout<<endl;
 //player's turn
 while (!(choice)){
 cout<<endl;
-cout<<"make a choice:"<<endl<<"0: hit"<<endl<<"1: double down"<<endl<<"3: stand"<<endl<<"anything that isnt an integer: exit program."<<endl;
+cout<<"make a choice:"<<endl<<"0: hit"<<endl<<"1: double down"<<endl<<"3: stand"<<endl<<"*: exit program."<<endl;
 
 if(!(cin>>choice)){
 return(30);
