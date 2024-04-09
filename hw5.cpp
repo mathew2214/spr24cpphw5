@@ -264,7 +264,7 @@ int choice=5;
 
 cout<<dec<<fixed<<setprecision(2)<<"Current balance: $"<<bal<<endl;;
 cout<<"How much money would you like to wager? ";
-cin>>wager;
+cin>>fixed>>setprecision(2)>>wager;
 while ((bal - wager) <= 0){
 cout<<"no, try again. ";
 cin>>wager;}
