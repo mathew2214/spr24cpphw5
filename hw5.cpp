@@ -444,7 +444,10 @@ showhand(dealerhand);
 cout<<"the dealer beat you!"<<endl;
 return -1;
 }
-
+if(isBlackJack(playerhand) && (isBlackJack(dealerhand))){
+cout<<"Its a tie!"<<endl;
+return 69420;
+}
 /*cout<<endl;
 cout<<"player's final hand:"<<endl;
 showhand(playerhand);
