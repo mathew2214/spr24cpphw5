@@ -10,7 +10,7 @@
 #include "card.hpp"
 #include <ctime>
 
-
+//i would love to know how many other students actually render the cards. 
 //cards are objects
 //decks are vectors of card objects
 //hands are just really small decks
@@ -433,6 +433,7 @@ showhand(playerhand);
 cout<<endl<<"dealers final hand:"<<endl;
 showhand(dealerhand);
 cout<<"you beat the dealer!"<<endl;
+return 1;
 }
 if(getHandSum(playerhand) < getHandSum(dealerhand)){
 cout<<endl;
@@ -441,6 +442,7 @@ showhand(playerhand);
 cout<<endl<<"dealers final hand:"<<endl;
 showhand(dealerhand);
 cout<<"the dealer beat you!"<<endl;
+return -1;
 }
 
 /*cout<<endl;
@@ -514,6 +516,6 @@ exit(1);
 break;
 };
 }
-
+displayGameSummary(wins, loss, ties, initbal, wb, lb);
 return 0;
 }
